@@ -1,0 +1,155 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+
+  @include vp-1023 {
+    margin-bottom: 100px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    margin-bottom: 63px;
+  }
+}
+
+.contacts__map {
+  position: relative;
+  width: 560px;
+  height: 306px;
+  margin-right: 20px;
+  overflow: hidden;
+
+  @include vp-1023 {
+    width: 324px;
+    height: 335px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 316px;
+    margin: 0 auto;
+    order: 2;
+  }
+}
+
+.contacts__map-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 560px;
+  height: 306px;
+  overflow: hidden;
+
+  @include vp-1023 {
+    width: 324px;
+    height: 335px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 316px;
+  }
+}
+
+.contacts__map-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.contacts__map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 560px;
+  height: 306px;
+
+  @include vp-1023 {
+    width: 324px;
+    height: 335px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 316px;
+  }
+}
+
+.contacts__info {
+  flex-shrink: 1;
+  width: 43.1%;
+  padding-top: 16px;
+
+  @include vp-1023 {
+    width: 47.8%;
+    padding-top: 19px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.contacts__text {
+  margin: 0 0 33px;
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  @include vp-1023 {
+    margin-bottom: 27px;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+
+  @include vp-767 {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  @include vp-1023 {
+    align-items: flex-start;
+    margin-bottom: 23px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__link svg {
+  flex-shrink: 0;
+  margin-right: 10px;
+
+  @include vp-1023 {
+    align-items: flex-start;
+    margin-top: 5px;
+  }
+}
+
+.contacts__desktop-hidden {
+  display: none;
+
+  @include vp-1023 {
+    display: inline;
+  }
+}

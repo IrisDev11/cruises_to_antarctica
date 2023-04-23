@@ -1,114 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Туристический проект Круизы в Антарктику">
-    <title>Круизы в Антарктику</title>
-    <link rel="preload" href="fonts/montserrat-v25-latin-regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v25-latin-500.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v25-latin-600.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v25-latin-700.woff2" as="font" crossorigin="anonymous">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/apple.png"><!-- 180×180 -->
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <a class="header__logo">
-            <span class="visually-hidden">Логотип проекта Круизы в Антарктику.</span>
-            <svg width="70" height="38">
-              <use xlink:href="img/sprite.svg#logo"></use>
-            </svg>
-          </a>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="#features">Преимущества</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Направления</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#products">Ближайшие круизы</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#contacts">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Туристический проект Круизы в Антарктику">
+  <title>Круизы в Антарктику</title>
+  <!-- <link rel="preload" href="fonts/montserratregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratsemibold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratbold.woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"><!-- 180×180 -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header" data-header>
+      <div class="container">
+        <div class="header__overlay">
+          <div class="header__top-wrapper">
+            <a class="header__logo">
+              <span class="visually-hidden">Логотип проекта Круизы в Антарктику.</span>
+              <svg width="70" height="38">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <nav class="nav nav--closed nav--nojs">
+              <button class="nav__toggle" type="button">
+                <span class="visually-hidden">Кнопка открытия-зактытия меню.</span>
+              </button>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#features" data-smoth-scroll-link>Преимущества</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Направления</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#products" data-smoth-scroll-link>Ближайшие круизы</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#contacts" data-smoth-scroll-link>Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <div class="intro__heading-wrapper">
-              <h1 class="intro__heading">Круизы в&nbsp;Антарктику</h1>
-              <p class="intro__slogan">Волшебный мир айсбергов и&nbsp;пингвинов</p>
-            </div>
-            <div class="intro__content">
-              <h2 class="intro__subtitle">Путешествие на&nbsp;край Земли</h2>
-              <p class="intro__content-text">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
-              <picture>
-                <source type="image/webp" media="(min-width: 1024px)" srcset="img/intro-desktop.webp 1x, img/intro-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/intro-tablet.webp 1x, img/intro-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/intro-mobile.webp 1x, img/intro-mobile@2x.webp 2x">
-                <source media="(min-width: 1024px)" srcset="img/intro-desktop.jpg 1x, img/intro-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/intro-tablet.jpg 1x, img/intro-tablet@2x.jpg 2x">
-                <img src="img/intro-mobile.jpg" srcset="img/intro-mobile@2x.jpg 2x" width="290" height="156" loading="lazy"
-                  alt="Три пингвина на снегу.">
-              </picture>
-            </div>
-          </div>
-        </section>
-        <section class="features">
-          <div class="container">
-            <h2 class="features__heading">Преимущества</h2>
-            <ul class="features__list">
-              <li class="features__item">
-                <svg width="27" height="32">
-                  <use xlink:href="img/sprite.svg#feature-liner"></use>
-                </svg>
-                <h3 class="features__subtitle">Небольшой круизный лайнер</h3>
-                <p class="features__text">Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
-              </li>
-              <li class="features__item">
-                <svg width="38" height="32">
-                  <use xlink:href="img/sprite.svg#feature-liner"></use>
-                </svg>
-                <h3 class="features__subtitle">Система все включено</h3>
-                <p class="features__text">Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
-              </li>
-              <li class="features__item">
-                <svg width="44" height="32">
-                  <use xlink:href="img/sprite.svg#feature-zodiac"></use>
-                </svg>
-                <h3 class="features__subtitle">Экскурсионные туры на&nbsp;Zodiac</h3>
-                <p class="features__text">Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac c&nbsp;опытными экскурсоводами.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <div class="header__heading-wrapper">
+          <h1 class="header__heading">Круизы в&nbsp;Антарктику</h1>
+          <p class="header__slogan">Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
         <div class="container">
-          <section class="products">
-            <h2 class="products__heading">Ближайшие круизы</h2>
-            <ul class="products__list">
-              <li class="products__item">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/product-desktop-1.webp 1x, img/product-desktop-1@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/product-tablet-1.webp 1x, img/product-tablet-1@2x.webp 2x">
-                  <source type="image/webp" srcset="img/product-mobile-1.webp 1x, img/product-mobile-1@2x.webp 2x">
-                  <source media="(min-width: 1024px)" srcset="img/product-desktop-1.jpg 1x, img/product-desktop-1@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/product-tablet-1.jpg 1x, img/product-tablet-1@2x.jpg 2x">
-                  <img src="img/product-mobile-1.jpg" srcset="img/product-mobile-1@2x.jpg 2x" width="260" height="386" loading="lazy"
-                    alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
-                </picture>
-                <h3 class="products__subtitle">Круиз “Астория”</h3>
+          <div class="intro__content">
+            <div class="intro__column-left">
+              <h2 class="intro__subtitle">Путешествие на&nbsp;край&nbsp;Земли</h2>
+              <p class="intro__content-text">Это волшебное путешествие поможет вам познакомиться поближе
+                с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+            </div>
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)"
+                srcset="img/intro-desktop.webp 1x, img/intro-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/intro-tablet.webp 1x, img/intro-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/intro-mobile.webp 1x, img/intro-mobile@2x.webp 2x">
+              <source media="(min-width: 1024px)" srcset="img/intro-desktop.jpg 1x, img/intro-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/intro-tablet.jpg 1x, img/intro-tablet@2x.jpg 2x">
+              <img src="img/intro-mobile.jpg" srcset="img/intro-mobile@2x.jpg 2x" width="290" height="156"
+                loading="lazy" alt="Три пингвина на снегу.">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="features" id="features">
+        <div class="container">
+          <h2 class="features__heading">Преимущества</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <svg width="27" height="32">
+                <use xlink:href="img/sprite.svg#feature-liner"></use>
+              </svg>
+              <h3 class="features__subtitle">Небольшой круизный&nbsp;лайнер</h3>
+              <p class="features__text">Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет
+                избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+            </li>
+            <li class="features__item">
+              <svg width="38" height="32">
+                <use xlink:href="img/sprite.svg#feature-all-inclusive"></use>
+              </svg>
+              <h3 class="features__subtitle">Система все&nbsp;включено</h3>
+              <p class="features__text">Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;.
+                Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+            </li>
+            <li class="features__item">
+              <svg width="44" height="32">
+                <use xlink:href="img/sprite.svg#feature-zodiac"></use>
+              </svg>
+              <h3 class="features__subtitle">Экскурсионные туры на&nbsp;Zodiac</h3>
+              <p class="features__text">Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных
+                лодках типа Zodiac c&nbsp;опытными экскурсоводами.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="container">
+        <section class="products" id="products">
+          <h2 class="products__heading">Ближайшие круизы</h2>
+          <ul class="products__list">
+            <li class="products__item">
+              <a class="products__link" href="#">
                 <div class="products__info">
+                  <h4 class="products__info-title">Круиз “Астория”</h4>
                   <dl class="products__info-list">
                     <dt>Маршрут</dt>
                     <dd>Аргентина - Фолклендские острова - Антарктида</dd>
@@ -119,21 +128,28 @@
                     <dt>Цена</dt>
                     <dd>от 11500 &#36;</dd>
                   </dl>
-                  <a class="btn products__link" href="#">Забронировать</a>
+                  <div class="btn products__btn">Забронировать</div>
                 </div>
-              </li>
-              <li class="products__item">
+                <h3 class="products__subtitle">Круиз “Астория”</h3>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/product-desktop-2.webp 1x, img/product-desktop-2@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/product-tablet-2.webp 1x, img/product-tablet-2@2x.webp 2x">
-                  <source type="image/webp" srcset="img/product-mobile-2.webp 1x, img/product-mobile-2@2x.webp 2x">
-                  <source media="(min-width: 1024px)" srcset="img/product-desktop-2.jpg 1x, img/product-desktop-2@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/product-tablet-2.jpg 1x, img/product-tablet-2@2x.jpg 2x">
-                  <img src="img/product-mobile-2.jpg" srcset="img/product-mobile-2@2x.jpg 2x" width="260" height="386" loading="lazy"
-                    alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
+                  <source type="image/webp" media="(min-width: 1024px)"
+                    srcset="img/product-desktop-1.webp 1x, img/product-desktop-1@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/product-tablet-1.webp 1x, img/product-tablet-1@2x.webp 2x">
+                  <source type="image/webp" srcset="img/product-mobile-1.webp 1x, img/product-mobile-1@2x.webp 2x">
+                  <source media="(min-width: 1024px)"
+                    srcset="img/product-desktop-1.jpg 1x, img/product-desktop-1@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-tablet-1.jpg 1x, img/product-tablet-1@2x.jpg 2x">
+                  <img src="img/product-mobile-1.jpg" srcset="img/product-mobile-1@2x.jpg 2x" width="260" height="386"
+                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
                 </picture>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#">
                 <div class="products__info">
-                  <h3 class="products__subtitle">Круиз “Элайн”</h3>
+                  <h4 class="products__info-title">Круиз “Элайн”</h4>
                   <dl class="products__info-list">
                     <dt>Маршрут</dt>
                     <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
@@ -144,21 +160,28 @@
                     <dt>Цена</dt>
                     <dd>от 14500 &#36;</dd>
                   </dl>
-                  <a class="btn products__link" href="#">Забронировать</a>
+                  <div class="btn products__btn">Забронировать</div>
                 </div>
-              </li>
-              <li class="products__item">
+                <h3 class="products__subtitle">Круиз “Элайн”</h3>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/product-desktop-2.webp 1x, img/product-desktop-2@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/product-tablet-2.webp 1x, img/product-tablet-2@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1024px)"
+                    srcset="img/product-desktop-2.webp 1x, img/product-desktop-2@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/product-tablet-2.webp 1x, img/product-tablet-2@2x.webp 2x">
                   <source type="image/webp" srcset="img/product-mobile-2.webp 1x, img/product-mobile-2@2x.webp 2x">
-                  <source media="(min-width: 1024px)" srcset="img/product-desktop-2.jpg 1x, img/product-desktop-2@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/product-tablet-2.jpg 1x, img/product-tablet-2@2x.jpg 2x">
-                  <img src="img/product-mobile-2.jpg" srcset="img/product-mobile-2@2x.jpg 2x" width="260" height="386" loading="lazy"
-                    alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
+                  <source media="(min-width: 1024px)"
+                    srcset="img/product-desktop-2.jpg 1x, img/product-desktop-2@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-tablet-2.jpg 1x, img/product-tablet-2@2x.jpg 2x">
+                  <img src="img/product-mobile-2.jpg" srcset="img/product-mobile-2@2x.jpg 2x" width="260" height="386"
+                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
                 </picture>
-                <h3 class="products__subtitle">Круиз “Атлантис”</h3>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#">
                 <div class="products__info">
+                  <h4 class="products__info-title">Круиз “Атлантис”</h4>
                   <dl class="products__info-list">
                     <dt>Маршрут</dt>
                     <dd>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
@@ -169,21 +192,28 @@
                     <dt>Цена</dt>
                     <dd>от 14500 &#36;</dd>
                   </dl>
-                  <a class="btn products__link" href="#">Забронировать</a>
+                  <div class="btn products__btn">Забронировать</div>
                 </div>
-              </li>
-              <li class="products__item">
+                <h3 class="products__subtitle">Круиз “Атлантис”</h3>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/product-desktop-4.webp 1x, img/product-desktop-4@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/product-tablet-4.webp 1x, img/product-tablet-4@2x.webp 2x">
-                  <source type="image/webp" srcset="img/product-mobile-4.webp 1x, img/product-mobile-4@2x.webp 2x">
-                  <source media="(min-width: 1024px)" srcset="img/product-desktop-4.jpg 1x, img/product-desktop-4@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/product-tablet-4.jpg 1x, img/product-tablet-4@2x.jpg 2x">
-                  <img src="img/product-mobile-4.jpg" srcset="img/product-mobile-4@2x.jpg 2x" width="260" height="386" loading="lazy"
-                    alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
+                  <source type="image/webp" media="(min-width: 1024px)"
+                    srcset="img/product-desktop-2.webp 1x, img/product-desktop-2@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/product-tablet-2.webp 1x, img/product-tablet-2@2x.webp 2x">
+                  <source type="image/webp" srcset="img/product-mobile-2.webp 1x, img/product-mobile-2@2x.webp 2x">
+                  <source media="(min-width: 1024px)"
+                    srcset="img/product-desktop-2.jpg 1x, img/product-desktop-2@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-tablet-2.jpg 1x, img/product-tablet-2@2x.jpg 2x">
+                  <img src="img/product-mobile-2.jpg" srcset="img/product-mobile-2@2x.jpg 2x" width="260" height="386"
+                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
                 </picture>
-                <h3 class="products__subtitle">Круиз "Одиссей"</h3>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#">
                 <div class="products__info">
+                  <h4 class="products__info-title">Круиз "Одиссей"</h4>
                   <dl class="products__info-list">
                     <dt>Маршрут</dt>
                     <dd>Чили - Антарктида</dd>
@@ -194,21 +224,28 @@
                     <dt>Цена</dt>
                     <dd>от 9700 &#36;</dd>
                   </dl>
-                  <a class="btn products__link" href="#">Забронировать</a>
+                  <div class="btn products__btn">Забронировать</div>
                 </div>
-              </li>
-              <li class="products__item">
+                <h3 class="products__subtitle">Круиз "Одиссей"</h3>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/product-desktop-5.webp 1x, img/product-desktop-5@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/product-tablet-5.webp 1x, img/product-tablet-5@2x.webp 2x">
-                  <source type="image/webp" srcset="img/product-mobile-5.webp 1x, img/product-mobile-5@2x.webp 2x">
-                  <source media="(min-width: 1024px)" srcset="img/product-desktop-5.jpg 1x, img/product-desktop-5@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/product-tablet-5.jpg 1x, img/product-tablet-5@2x.jpg 2x">
-                  <img src="img/product-mobile-5.jpg" srcset="img/product-mobile-5@2x.jpg 2x" width="260" height="386" loading="lazy"
-                    alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
+                  <source type="image/webp" media="(min-width: 1024px)"
+                    srcset="img/product-desktop-4.webp 1x, img/product-desktop-4@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/product-tablet-4.webp 1x, img/product-tablet-4@2x.webp 2x">
+                  <source type="image/webp" srcset="img/product-mobile-4.webp 1x, img/product-mobile-4@2x.webp 2x">
+                  <source media="(min-width: 1024px)"
+                    srcset="img/product-desktop-4.jpg 1x, img/product-desktop-4@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-tablet-4.jpg 1x, img/product-tablet-4@2x.jpg 2x">
+                  <img src="img/product-mobile-4.jpg" srcset="img/product-mobile-4@2x.jpg 2x" width="260" height="386"
+                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
                 </picture>
-                <h3 class="products__subtitle">Круиз "Олимпия"</h3>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#">
                 <div class="products__info">
+                  <h4 class="products__info-title">Круиз "Олимпия"</h4>
                   <dl class="products__info-list">
                     <dt>Маршрут</dt>
                     <dd>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
@@ -219,21 +256,28 @@
                     <dt>Цена</dt>
                     <dd>от 18600 &#36;</dd>
                   </dl>
-                  <a class="btn products__link" href="#">Забронировать</a>
+                  <div class="btn products__btn">Забронировать</div>
                 </div>
-              </li>
-              <li class="products__item">
+                <h3 class="products__subtitle">Круиз "Олимпия"</h3>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/product-desktop-6.webp 1x, img/product-desktop-6@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/product-tablet-6.webp 1x, img/product-tablet-6@2x.webp 2x">
-                  <source type="image/webp" srcset="img/product-mobile-6.webp 1x, img/product-mobile-6@2x.webp 2x">
-                  <source media="(min-width: 1024px)" srcset="img/product-desktop-6.jpg 1x, img/product-desktop-6@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/product-tablet-6.jpg 1x, img/product-tablet-6@2x.jpg 2x">
-                  <img src="img/product-mobile-6.jpg" srcset="img/product-mobile-6@2x.jpg 2x" width="260" height="386" loading="lazy"
-                    alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
+                  <source type="image/webp" media="(min-width: 1024px)"
+                    srcset="img/product-desktop-5.webp 1x, img/product-desktop-5@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/product-tablet-5.webp 1x, img/product-tablet-5@2x.webp 2x">
+                  <source type="image/webp" srcset="img/product-mobile-5.webp 1x, img/product-mobile-5@2x.webp 2x">
+                  <source media="(min-width: 1024px)"
+                    srcset="img/product-desktop-5.jpg 1x, img/product-desktop-5@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-tablet-5.jpg 1x, img/product-tablet-5@2x.jpg 2x">
+                  <img src="img/product-mobile-5.jpg" srcset="img/product-mobile-5@2x.jpg 2x" width="260" height="386"
+                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
                 </picture>
-                <h3 class="products__subtitle">Круиз "Аврора"</h3>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#">
                 <div class="products__info">
+                  <h4 class="products__info-title">Круиз "Аврора"</h4>
                   <dl class="products__info-list">
                     <dt>Маршрут</dt>
                     <dd>Аргентина - Антарктида - Чили</dd>
@@ -244,21 +288,28 @@
                     <dt>Цена</dt>
                     <dd>от 11700 &#36;</dd>
                   </dl>
-                  <a class="btn products__link" href="#">Забронировать</a>
+                  <div class="btn products__btn">Забронировать</div>
                 </div>
-              </li>
-              <li class="products__item">
+                <h3 class="products__subtitle">Круиз "Аврора"</h3>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/product-desktop-7.webp 1x, img/product-desktop-7@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/product-tablet-7.webp 1x, img/product-tablet-7@2x.webp 2x">
-                  <source type="image/webp" srcset="img/product-mobile-7.webp 1x, img/product-mobile-7@2x.webp 2x">
-                  <source media="(min-width: 1024px)" srcset="img/product-desktop-7.jpg 1x, img/product-desktop-7@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/product-tablet-7.jpg 1x, img/product-tablet-7@2x.jpg 2x">
-                  <img src="img/product-mobile-7.jpg" srcset="img/product-mobile-7@2x.jpg 2x" width="260" height="386" loading="lazy"
-                    alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
+                  <source type="image/webp" media="(min-width: 1024px)"
+                    srcset="img/product-desktop-6.webp 1x, img/product-desktop-6@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/product-tablet-6.webp 1x, img/product-tablet-6@2x.webp 2x">
+                  <source type="image/webp" srcset="img/product-mobile-6.webp 1x, img/product-mobile-6@2x.webp 2x">
+                  <source media="(min-width: 1024px)"
+                    srcset="img/product-desktop-6.jpg 1x, img/product-desktop-6@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-tablet-6.jpg 1x, img/product-tablet-6@2x.jpg 2x">
+                  <img src="img/product-mobile-6.jpg" srcset="img/product-mobile-6@2x.jpg 2x" width="260" height="386"
+                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
                 </picture>
-                <h3 class="products__subtitle">Круиз "Леонор"</h3>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#">
                 <div class="products__info">
+                  <h4 class="products__info-title">Круиз "Леонор"</h4>
                   <dl class="products__info-list">
                     <dt>Маршрут</dt>
                     <dd>Чили - Южная Георгия - Антарктида - Аргентина</dd>
@@ -269,21 +320,28 @@
                     <dt>Цена</dt>
                     <dd>от 12500 &#36;</dd>
                   </dl>
-                  <a class="btn products__link" href="#">Забронировать</a>
+                  <div class="btn products__btn">Забронировать</div>
                 </div>
-              </li>
-              <li class="products__item">
+                <h3 class="products__subtitle">Круиз "Леонор"</h3>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1024px)" srcset="img/product-desktop-7.webp 1x, img/product-desktop-7@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/product-tablet-7.webp 1x, img/product-tablet-7@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1024px)"
+                    srcset="img/product-desktop-7.webp 1x, img/product-desktop-7@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/product-tablet-7.webp 1x, img/product-tablet-7@2x.webp 2x">
                   <source type="image/webp" srcset="img/product-mobile-7.webp 1x, img/product-mobile-7@2x.webp 2x">
-                  <source media="(min-width: 1024px)" srcset="img/product-desktop-7.jpg 1x, img/product-desktop-7@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/product-tablet-7.jpg 1x, img/product-tablet-7@2x.jpg 2x">
-                  <img src="img/product-mobile-7.jpg" srcset="img/product-mobile-7@2x.jpg 2x" width="260" height="386" loading="lazy"
-                    alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
+                  <source media="(min-width: 1024px)"
+                    srcset="img/product-desktop-7.jpg 1x, img/product-desktop-7@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-tablet-7.jpg 1x, img/product-tablet-7@2x.jpg 2x">
+                  <img src="img/product-mobile-7.jpg" srcset="img/product-mobile-7@2x.jpg 2x" width="260" height="386"
+                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
                 </picture>
-                <h3 class="products__subtitle">Круиз "Минион - 1"</h3>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#">
                 <div class="products__info">
+                  <h4 class="products__info-title">Круиз "Минион - 1"</h4>
                   <dl class="products__info-list">
                     <dt>Маршрут</dt>
                     <dd>Аргентина - Антарктида</dd>
@@ -294,92 +352,127 @@
                     <dt>Цена</dt>
                     <dd>от 12300 &#36;</dd>
                   </dl>
-                  <a class="btn products__link" href="#">Забронировать</a>
+                  <div class="btn products__btn">Забронировать</div>
                 </div>
-              </li>
-            </ul>
-          </section>
-        </div>
-        <section class="feedback">
-          <div class="container">
-            <h2 class="feedback__heading">Раннее бронирование</h2>
-            <p>Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+                <h3 class="products__subtitle">Круиз "Минион - 1"</h3>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1024px)"
+                    srcset="img/product-desktop-8.webp 1x, img/product-desktop-8@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/product-tablet-8.webp 1x, img/product-tablet-8@2x.webp 2x">
+                  <source type="image/webp" srcset="img/product-mobile-8.webp 1x, img/product-mobile-8@2x.webp 2x">
+                  <source media="(min-width: 1024px)"
+                    srcset="img/product-desktop-8.jpg 1x, img/product-desktop-8@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-tablet-8.jpg 1x, img/product-tablet-8@2x.jpg 2x">
+                  <img src="img/product-mobile-8.jpg" srcset="img/product-mobile-8@2x.jpg 2x" width="260" height="386"
+                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="feedback">
+        <div class="container">
+          <div class="feedback__wrapper">
+            <div class="feedback__heading-wrapper">
+              <h2 class="feedback__heading">Раннее бронирование</h2>
+              <p class="feedback__text">Забронируйте тур за&nbsp;3-6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте
+                до&nbsp;50%</p>
+            </div>
             <div class="form__wrapper">
               <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
               <form class="form" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="form__input form__input-name">
-                  <input type="text" name="user-name" id="feedback-name" placeholder="Имя" aria-label="Имя" required
-                    tabindex="1">
+                  <input type="text" name="user-name" id="feedback-name" placeholder="Имя" aria-label="Имя" required>
                 </div>
                 <div class="form__input form__form-tel">
-                  <input type="text" name="user-tel" id="feedback-tel" placeholder="Телефон" aria-label="Телефон" required>
+                  <input type="tel" name="user-tel" id="feedback-tel" placeholder="Телефон" aria-label="Телефон"
+                    required>
                 </div>
                 <div class="form__input form__form-email">
-                  <input type="email" name="user-email" id="feedback-email" placeholder="Email" aria-label="Email" required>
+                  <input type="email" name="user-email" id="feedback-email" placeholder="Email" aria-label="Email"
+                    required>
                 </div>
                 <div class="form__checkbox-approval">
                   <input class="visually-hidden" type="checkbox" name="data" id="approval" checked required>
-                  <label for="approval">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</label>
+                  <label for="approval">Я&nbsp;согласен на&nbsp;обработку моих&nbsp;персональных данных</label>
                 </div>
-                <button class="form__button" type="submit">Оставить заявку</button>
+                <button class="btn form__button" type="submit">Оставить заявку</button>
               </form>
             </div>
           </div>
-        </section>
-        <section class="contacts">
+        </div>
+      </section>
+      <div class="container">
+        <section class="contacts" id="contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <div class="map" id="map">
+          <div class="contacts__map" id="map">
             <picture>
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)"
+                srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
               <source media="(min-width: 1024px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
               <img src="img/map-mobile.jpg" srcset="map-mobile@2x.jpg 2x" width="560" height="306" loading="lazy"
                 alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8.">
             </picture>
-            <div class="contacts__info">
-              <p class="contacts__text">У&nbsp;вас ещё остались вопросы или сомнения?<br>Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
-              <address class="contacts__list">
-                <a class="contacts__link" href="#">
-                  <svg width="18" height="22">
-                    <use xlink:href="img/sprite.svg#marker-map"></use>
-                  </svg>
-                  <span>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</span>
-                </a>
-                <a class="contacts__link" href="tel:+88002000000">
-                  <svg width="18" height="18">
-                    <use xlink:href="img/sprite.svg#tel"></use>
-                  </svg>
-                  <span>8-800-200-00-00</span>
-                </a>
-              </address>
+            <div class="contacts__map-iframe">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197793!2d30.320472476757534!3d59.93871916209421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682098396149!5m2!1sru!2sru"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
+          <div class="contacts__info">
+            <p class="contacts__text">У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис
+              и&nbsp;мы&nbsp;вам все расскажем.</p>
+            <address class="contacts__list">
+              <div class="contacts__link">
+                <svg width="18" height="22">
+                  <use xlink:href="img/sprite.svg#marker-map"></use>
+                </svg>
+                <span>г. Санкт Петербург,<br class="contacts__desktop-hidden"> ул. Большая Конюшенная, 19/8</span>
+              </div>
+              <a class="contacts__link" href="tel:+88002000000">
+                <svg width="18" height="18">
+                  <use xlink:href="img/sprite.svg#tel"></use>
+                </svg>
+                <span>8-800-200-00-00</span>
+              </a>
+            </address>
+          </div>
         </section>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          <a class="footer__logo">
-            <span class="visually-hidden">Логотип проекта Круизы в Антарктику.</span>
-            <svg width="70" height="38">
-              <use xlink:href="img/sprite.svg#logo"></use>
-            </svg>
-          </a>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#features">Преимущества</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Направления</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#products">Ближайшие круизы</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__nav">
+            <a class="footer__logo">
+              <span class="visually-hidden">Логотип проекта Круизы в Антарктику.</span>
+              <svg width="70" height="38">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#features" data-smoth-scroll-link>Преимущества</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Направления</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#products" data-smoth-scroll-link>Ближайшие&nbsp;круизы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#contacts" data-smoth-scroll-link>Контакты</a>
+              </li>
+            </ul>
+          </div>
           <ul class="social">
             <li class="social__item">
               <a class="social__link" href="#">
@@ -391,7 +484,7 @@
             </li>
             <li class="social__item">
               <a class="social__link" href="#">
-                <span class="visually-hidden">Ссылка на профиль.</span>
+                <span class="visually-hidden">Ссылка на профиль Яндекс Дзен.</span>
                 <svg width="20" height="20">
                   <use xlink:href="img/sprite.svg#social-2"></use>
                 </svg>
@@ -399,7 +492,7 @@
             </li>
             <li class="social__item">
               <a class="social__link" href="#">
-                <span class="visually-hidden">Ссылка на профиль.</span>
+                <span class="visually-hidden">Ссылка на профиль Reddit.</span>
                 <svg width="20" height="20">
                   <use xlink:href="img/sprite.svg#social-3"></use>
                 </svg>
@@ -407,10 +500,12 @@
             </li>
           </ul>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+  </div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,169 @@
+.features {
+  position: relative;
+  z-index: 0;
+
+  padding: 100px 0 100px;
+  text-align: center;
+
+  background-color: $color-lightblue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../img/bg-features-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    opacity: 0.1;
+
+    @include retina {
+      background-image: url("../img/bg-features-desktop@2x.png");
+    }
+
+    @include vp-1023 {
+      background-image: url("../img/bg-features-tablet.png");
+
+      @include retina {
+        background-image: url("../img/bg-features-tablet@2x.png");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../img/bg-features-mobile.png");
+
+      @include retina {
+        background-image: url("../img/bg-features-mobile@2x.png");
+      }
+    }
+  }
+
+  @include vp-1023 {
+    padding-top: 81px;
+    padding-bottom: 81px;
+  }
+
+  @include vp-767 {
+    padding-top: 48px;
+    padding-bottom: 35px;
+  }
+}
+
+.features__heading {
+  margin: 9px 0 49px;
+  padding: 0;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.features__list {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  &::after {
+    content: "";
+    flex-shrink: 1;
+    width: 31%;
+    min-width: 206px;
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.features__item {
+  flex-shrink: 1;
+  width: 31%;
+  min-width: 206px;
+  margin-bottom: 20px;
+  padding: 30px 30px 45px;
+
+  text-align: left;
+
+  background-color: $color-default-white;
+
+  @include vp-1023 {
+    width: 30%;
+    padding: 26px 15px 20px 20px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    padding: 25px 15px 20px 20px;
+  }
+}
+
+.features__item svg {
+  display: block;
+  margin-bottom: 18px;
+
+  @include vp-1023 {
+    height: 26px;
+    margin-left: -5px;
+  }
+
+  @include vp-767 {
+    margin-left: -3px;
+    margin-bottom: 20px;
+  }
+}
+
+.features__subtitle {
+  margin: 0 0 9px;
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  @include vp-1023 {
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    max-width: 170px;
+  }
+}
+
+.features__text {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}

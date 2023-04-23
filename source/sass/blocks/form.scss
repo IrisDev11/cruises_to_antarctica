@@ -1,0 +1,141 @@
+.form__wrapper {
+  max-width: 403px;
+  padding: 44px 50px 50px;
+
+  background-color: $color-default-black;
+
+  @include vp-767 {
+    padding: 35px 30px 40px;
+  }
+}
+
+.form__wrapper p {
+  margin: 0 0 28px;
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+
+  @include vp-767 {
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+.form__input input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 11px 16px;
+
+  font-family: $ff-montserrat;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-transparent;
+
+  background-color: $color-default-white;
+  border: none;
+
+  @include hover {
+    opacity: 0.8;
+  }
+}
+
+.form__input input::placeholder {
+  font-family: $ff-montserrat;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-default-black;
+}
+
+.form__button {
+  justify-content: center;
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.form__checkbox-approval {
+  margin-bottom: 32px;
+  padding-left: 22px;
+  padding-top: 2px;
+
+  @include vp-767 {
+    margin-bottom: 25px;
+    padding-top: 0;
+    padding-left: 28px;
+  }
+}
+
+.form__checkbox-approval label {
+  position: relative;
+  display: block;
+
+  font-size: 10px;
+  line-height: 13px;
+  color: $color-default-white;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -3px;
+    left: -23px;
+    width: 18px;
+    height: 18px;
+
+    background-color: $color-default-white;
+
+    @include vp-767 {
+      top: 0;
+      left: -28px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -3px;
+    left: -22px;
+    display: none;
+    width: 18px;
+    height: 18px;
+
+    background-image: url("../img/svg/checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: 2px center;
+    background-size: 12px 8px;
+
+    @include vp-767 {
+      top: 0;
+      left: -26px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include active {
+    opacity: 0.5;
+  }
+
+  @include vp-767 {
+    line-height: 12px;
+  }
+}
+
+.form__checkbox-approval input:checked + label::after {
+  display: block;
+}
+
+.form__checkbox-approval input:focus ~ label {
+  opacity: 0.6;
+  border-bottom: 1px solid $color-default-white;
+}
