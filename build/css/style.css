@@ -389,7 +389,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/montserratregular.woff2") format("woff2");
+  src: url("../fonts/montserratregular.woff2") format("woff2"), url("../fonts/montserratregular.woff") format("woff");
 }
 
 @font-face {
@@ -397,7 +397,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/montserratmedium.woff2") format("woff2");
+  src: url("../fonts/montserratmedium.woff2") format("woff2"), url("../fonts/montserratmedium.woff") format("woff");
 }
 
 @font-face {
@@ -405,7 +405,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/montserratsemibold.woff2") format("woff2");
+  src: url("../fonts/montserratsemibold.woff2") format("woff2"), url("../fonts/montserratsemibold.woff") format("woff");
 }
 
 @font-face {
@@ -413,7 +413,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/montserratbold.woff2") format("woff2");
+  src: url("../fonts/montserratbold.woff2") format("woff2"), url("../fonts/montserratbold.woff2") format("woff2");
 }
 
 *,
@@ -659,10 +659,6 @@ button,
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-}
-
-.btn--red {
-  background-color: #ff1553;
 }
 
 .btn:disabled {
@@ -974,16 +970,13 @@ button,
 }
 
 .products__item {
+  display: block;
+  position: relative;
+  width: 260px;
   min-height: 386px;
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 30px;
-}
-
-.products__link {
-  display: block;
-  position: relative;
-  width: 260px;
   cursor: pointer;
 }
 
@@ -1627,7 +1620,7 @@ button,
     line-height: 39px;
   }
 
-  .products__link {
+  .products__item {
     width: 309px;
   }
 
@@ -1984,14 +1977,14 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .products__item {
-    margin: 0 auto 30px;
-  }
-
-  .products__link {
     width: 270px;
+    margin: 0 auto 30px;
   }
 
   .products__info {

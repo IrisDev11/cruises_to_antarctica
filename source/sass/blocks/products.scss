@@ -63,24 +63,18 @@
 
   @include vp-767 {
     flex-direction: column;
+    justify-content: center;
   }
 }
 
 .products__item {
+  display: block;
+  position: relative;
+  width: 260px;
   min-height: 386px;
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 30px;
-
-  @include vp-767 {
-    margin: 0 auto 30px;
-  }
-}
-
-.products__link {
-  display: block;
-  position: relative;
-  width: 260px;
 
   cursor: pointer;
 
@@ -90,6 +84,7 @@
 
   @include vp-767 {
     width: 270px;
+    margin: 0 auto 30px;
   }
 }
 

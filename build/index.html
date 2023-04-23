@@ -7,13 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Туристический проект Круизы в Антарктику">
   <title>Круизы в Антарктику</title>
-  <!-- <link rel="preload" href="fonts/montserratregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratregular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratmedium.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratsemibold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserratregular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserratmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserratsemibold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserratbold.woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="preload" href="fonts/montserratbold.woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple.png"><!-- 180×180 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -63,7 +67,9 @@
             <div class="intro__column-left">
               <h2 class="intro__subtitle">Путешествие на&nbsp;край&nbsp;Земли</h2>
               <p class="intro__content-text">Это волшебное путешествие поможет вам познакомиться поближе
-                с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+                с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где
+                вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков
+                и&nbsp;многое другое.</p>
             </div>
             <picture>
               <source type="image/webp" media="(min-width: 1024px)"
@@ -114,261 +120,237 @@
         <section class="products" id="products">
           <h2 class="products__heading">Ближайшие круизы</h2>
           <ul class="products__list">
-            <li class="products__item">
-              <a class="products__link" href="#">
-                <div class="products__info">
-                  <h4 class="products__info-title">Круиз “Астория”</h4>
-                  <dl class="products__info-list">
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Фолклендские острова - Антарктида</dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>11 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 11500 &#36;</dd>
-                  </dl>
-                  <div class="btn products__btn">Забронировать</div>
-                </div>
-                <h3 class="products__subtitle">Круиз “Астория”</h3>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1024px)"
-                    srcset="img/product-desktop-1.webp 1x, img/product-desktop-1@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/product-tablet-1.webp 1x, img/product-tablet-1@2x.webp 2x">
-                  <source type="image/webp" srcset="img/product-mobile-1.webp 1x, img/product-mobile-1@2x.webp 2x">
-                  <source media="(min-width: 1024px)"
-                    srcset="img/product-desktop-1.jpg 1x, img/product-desktop-1@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/product-tablet-1.jpg 1x, img/product-tablet-1@2x.jpg 2x">
-                  <img src="img/product-mobile-1.jpg" srcset="img/product-mobile-1@2x.jpg 2x" width="260" height="386"
-                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
-                </picture>
-              </a>
+            <li class="products__item" tabindex="0">
+              <div class="products__info">
+                <h4 class="products__info-title">Круиз “Астория”</h4>
+                <dl class="products__info-list">
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Фолклендские острова - Антарктида</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>11 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 11500 &#36;</dd>
+                </dl>
+                <a class="btn products__btn" href="#">Забронировать</a>
+              </div>
+              <h3 class="products__subtitle">Круиз “Астория”</h3>
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="img/product-desktop-1.webp 1x, img/product-desktop-1@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/product-tablet-1.webp 1x, img/product-tablet-1@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-mobile-1.webp 1x, img/product-mobile-1@2x.webp 2x">
+                <source media="(min-width: 1024px)"
+                  srcset="img/product-desktop-1.jpg 1x, img/product-desktop-1@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product-tablet-1.jpg 1x, img/product-tablet-1@2x.jpg 2x">
+                <img src="img/product-mobile-1.jpg" srcset="img/product-mobile-1@2x.jpg 2x" width="260" height="386"
+                  loading="lazy" alt="Фоновое изображение Антарктики.">
+              </picture>
             </li>
-            <li class="products__item">
-              <a class="products__link" href="#">
-                <div class="products__info">
-                  <h4 class="products__info-title">Круиз “Элайн”</h4>
-                  <dl class="products__info-list">
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Буэнос-Айрес</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>20 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 14500 &#36;</dd>
-                  </dl>
-                  <div class="btn products__btn">Забронировать</div>
-                </div>
-                <h3 class="products__subtitle">Круиз “Элайн”</h3>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1024px)"
-                    srcset="img/product-desktop-2.webp 1x, img/product-desktop-2@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/product-tablet-2.webp 1x, img/product-tablet-2@2x.webp 2x">
-                  <source type="image/webp" srcset="img/product-mobile-2.webp 1x, img/product-mobile-2@2x.webp 2x">
-                  <source media="(min-width: 1024px)"
-                    srcset="img/product-desktop-2.jpg 1x, img/product-desktop-2@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/product-tablet-2.jpg 1x, img/product-tablet-2@2x.jpg 2x">
-                  <img src="img/product-mobile-2.jpg" srcset="img/product-mobile-2@2x.jpg 2x" width="260" height="386"
-                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
-                </picture>
-              </a>
+            <li class="products__item" tabindex="0">
+              <div class="products__info">
+                <h4 class="products__info-title">Круиз “Элайн”</h4>
+                <dl class="products__info-list">
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Буэнос-Айрес</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>20 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 14500 &#36;</dd>
+                </dl>
+                <a class="btn products__btn" href="#">Забронировать</a>
+              </div>
+              <h3 class="products__subtitle">Круиз “Элайн”</h3>
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="img/product-desktop-2.webp 1x, img/product-desktop-2@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/product-tablet-2.webp 1x, img/product-tablet-2@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-mobile-2.webp 1x, img/product-mobile-2@2x.webp 2x">
+                <source media="(min-width: 1024px)"
+                  srcset="img/product-desktop-2.jpg 1x, img/product-desktop-2@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product-tablet-2.jpg 1x, img/product-tablet-2@2x.jpg 2x">
+                <img src="img/product-mobile-2.jpg" srcset="img/product-mobile-2@2x.jpg 2x" width="260" height="386"
+                  loading="lazy" alt="Фоновое изображение Антарктики.">
+              </picture>
             </li>
-            <li class="products__item">
-              <a class="products__link" href="#">
-                <div class="products__info">
-                  <h4 class="products__info-title">Круиз “Атлантис”</h4>
-                  <dl class="products__info-list">
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>15 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 14500 &#36;</dd>
-                  </dl>
-                  <div class="btn products__btn">Забронировать</div>
-                </div>
-                <h3 class="products__subtitle">Круиз “Атлантис”</h3>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1024px)"
-                    srcset="img/product-desktop-2.webp 1x, img/product-desktop-2@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/product-tablet-2.webp 1x, img/product-tablet-2@2x.webp 2x">
-                  <source type="image/webp" srcset="img/product-mobile-2.webp 1x, img/product-mobile-2@2x.webp 2x">
-                  <source media="(min-width: 1024px)"
-                    srcset="img/product-desktop-2.jpg 1x, img/product-desktop-2@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/product-tablet-2.jpg 1x, img/product-tablet-2@2x.jpg 2x">
-                  <img src="img/product-mobile-2.jpg" srcset="img/product-mobile-2@2x.jpg 2x" width="260" height="386"
-                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
-                </picture>
-              </a>
+            <li class="products__item" tabindex="0">
+              <div class="products__info">
+                <h4 class="products__info-title">Круиз “Атлантис”</h4>
+                <dl class="products__info-list">
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>15 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 14500 &#36;</dd>
+                </dl>
+                <a class="btn products__btn" href="#">Забронировать</a>
+              </div>
+              <h3 class="products__subtitle">Круиз “Атлантис”</h3>
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="img/product-desktop-2.webp 1x, img/product-desktop-2@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/product-tablet-2.webp 1x, img/product-tablet-2@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-mobile-2.webp 1x, img/product-mobile-2@2x.webp 2x">
+                <source media="(min-width: 1024px)"
+                  srcset="img/product-desktop-2.jpg 1x, img/product-desktop-2@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product-tablet-2.jpg 1x, img/product-tablet-2@2x.jpg 2x">
+                <img src="img/product-mobile-2.jpg" srcset="img/product-mobile-2@2x.jpg 2x" width="260" height="386"
+                  loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
+              </picture>
             </li>
-            <li class="products__item">
-              <a class="products__link" href="#">
-                <div class="products__info">
-                  <h4 class="products__info-title">Круиз "Одиссей"</h4>
-                  <dl class="products__info-list">
-                    <dt>Маршрут</dt>
-                    <dd>Чили - Антарктида</dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Пунта-Аренас</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>13 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 9700 &#36;</dd>
-                  </dl>
-                  <div class="btn products__btn">Забронировать</div>
-                </div>
-                <h3 class="products__subtitle">Круиз "Одиссей"</h3>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1024px)"
-                    srcset="img/product-desktop-4.webp 1x, img/product-desktop-4@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/product-tablet-4.webp 1x, img/product-tablet-4@2x.webp 2x">
-                  <source type="image/webp" srcset="img/product-mobile-4.webp 1x, img/product-mobile-4@2x.webp 2x">
-                  <source media="(min-width: 1024px)"
-                    srcset="img/product-desktop-4.jpg 1x, img/product-desktop-4@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/product-tablet-4.jpg 1x, img/product-tablet-4@2x.jpg 2x">
-                  <img src="img/product-mobile-4.jpg" srcset="img/product-mobile-4@2x.jpg 2x" width="260" height="386"
-                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
-                </picture>
-              </a>
+            <li class="products__item" tabindex="0">
+              <div class="products__info">
+                <h4 class="products__info-title">Круиз "Одиссей"</h4>
+                <dl class="products__info-list">
+                  <dt>Маршрут</dt>
+                  <dd>Чили - Антарктида</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Пунта-Аренас</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>13 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 9700 &#36;</dd>
+                </dl>
+                <a class="btn products__btn" href="#">Забронировать</a>
+              </div>
+              <h3 class="products__subtitle">Круиз "Одиссей"</h3>
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="img/product-desktop-4.webp 1x, img/product-desktop-4@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/product-tablet-4.webp 1x, img/product-tablet-4@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-mobile-4.webp 1x, img/product-mobile-4@2x.webp 2x">
+                <source media="(min-width: 1024px)"
+                  srcset="img/product-desktop-4.jpg 1x, img/product-desktop-4@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product-tablet-4.jpg 1x, img/product-tablet-4@2x.jpg 2x">
+                <img src="img/product-mobile-4.jpg" srcset="img/product-mobile-4@2x.jpg 2x" width="260" height="386"
+                  loading="lazy" alt="Фоновое изображение Антарктики.">
+              </picture>
             </li>
-            <li class="products__item">
-              <a class="products__link" href="#">
-                <div class="products__info">
-                  <h4 class="products__info-title">Круиз "Олимпия"</h4>
-                  <dl class="products__info-list">
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>21 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 18600 &#36;</dd>
-                  </dl>
-                  <div class="btn products__btn">Забронировать</div>
-                </div>
-                <h3 class="products__subtitle">Круиз "Олимпия"</h3>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1024px)"
-                    srcset="img/product-desktop-5.webp 1x, img/product-desktop-5@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/product-tablet-5.webp 1x, img/product-tablet-5@2x.webp 2x">
-                  <source type="image/webp" srcset="img/product-mobile-5.webp 1x, img/product-mobile-5@2x.webp 2x">
-                  <source media="(min-width: 1024px)"
-                    srcset="img/product-desktop-5.jpg 1x, img/product-desktop-5@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/product-tablet-5.jpg 1x, img/product-tablet-5@2x.jpg 2x">
-                  <img src="img/product-mobile-5.jpg" srcset="img/product-mobile-5@2x.jpg 2x" width="260" height="386"
-                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
-                </picture>
-              </a>
+            <li class="products__item" tabindex="0">
+              <div class="products__info">
+                <h4 class="products__info-title">Круиз "Олимпия"</h4>
+                <dl class="products__info-list">
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>21 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 18600 &#36;</dd>
+                </dl>
+                <a class="btn products__btn" href="#">Забронировать</a>
+              </div>
+              <h3 class="products__subtitle">Круиз "Олимпия"</h3>
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="img/product-desktop-5.webp 1x, img/product-desktop-5@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/product-tablet-5.webp 1x, img/product-tablet-5@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-mobile-5.webp 1x, img/product-mobile-5@2x.webp 2x">
+                <source media="(min-width: 1024px)"
+                  srcset="img/product-desktop-5.jpg 1x, img/product-desktop-5@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product-tablet-5.jpg 1x, img/product-tablet-5@2x.jpg 2x">
+                <img src="img/product-mobile-5.jpg" srcset="img/product-mobile-5@2x.jpg 2x" width="260" height="386"
+                  loading="lazy" alt="Фоновое изображение Антарктики.">
+              </picture>
             </li>
-            <li class="products__item">
-              <a class="products__link" href="#">
-                <div class="products__info">
-                  <h4 class="products__info-title">Круиз "Аврора"</h4>
-                  <dl class="products__info-list">
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Антарктида - Чили</dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>14 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 11700 &#36;</dd>
-                  </dl>
-                  <div class="btn products__btn">Забронировать</div>
-                </div>
-                <h3 class="products__subtitle">Круиз "Аврора"</h3>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1024px)"
-                    srcset="img/product-desktop-6.webp 1x, img/product-desktop-6@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/product-tablet-6.webp 1x, img/product-tablet-6@2x.webp 2x">
-                  <source type="image/webp" srcset="img/product-mobile-6.webp 1x, img/product-mobile-6@2x.webp 2x">
-                  <source media="(min-width: 1024px)"
-                    srcset="img/product-desktop-6.jpg 1x, img/product-desktop-6@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/product-tablet-6.jpg 1x, img/product-tablet-6@2x.jpg 2x">
-                  <img src="img/product-mobile-6.jpg" srcset="img/product-mobile-6@2x.jpg 2x" width="260" height="386"
-                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
-                </picture>
-              </a>
+            <li class="products__item" tabindex="0">
+              <div class="products__info">
+                <h4 class="products__info-title">Круиз "Аврора"</h4>
+                <dl class="products__info-list">
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Антарктида - Чили</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>14 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 11700 &#36;</dd>
+                </dl>
+                <a class="btn products__btn" href="#">Забронировать</a>
+              </div>
+              <h3 class="products__subtitle">Круиз "Аврора"</h3>
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="img/product-desktop-6.webp 1x, img/product-desktop-6@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/product-tablet-6.webp 1x, img/product-tablet-6@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-mobile-6.webp 1x, img/product-mobile-6@2x.webp 2x">
+                <source media="(min-width: 1024px)"
+                  srcset="img/product-desktop-6.jpg 1x, img/product-desktop-6@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product-tablet-6.jpg 1x, img/product-tablet-6@2x.jpg 2x">
+                <img src="img/product-mobile-6.jpg" srcset="img/product-mobile-6@2x.jpg 2x" width="260" height="386"
+                  loading="lazy" alt="Фоновое изображение Антарктики.">
+              </picture>
             </li>
-            <li class="products__item">
-              <a class="products__link" href="#">
-                <div class="products__info">
-                  <h4 class="products__info-title">Круиз "Леонор"</h4>
-                  <dl class="products__info-list">
-                    <dt>Маршрут</dt>
-                    <dd>Чили - Южная Георгия - Антарктида - Аргентина</dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Пунта-Аренас</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>17 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 12500 &#36;</dd>
-                  </dl>
-                  <div class="btn products__btn">Забронировать</div>
-                </div>
-                <h3 class="products__subtitle">Круиз "Леонор"</h3>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1024px)"
-                    srcset="img/product-desktop-7.webp 1x, img/product-desktop-7@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/product-tablet-7.webp 1x, img/product-tablet-7@2x.webp 2x">
-                  <source type="image/webp" srcset="img/product-mobile-7.webp 1x, img/product-mobile-7@2x.webp 2x">
-                  <source media="(min-width: 1024px)"
-                    srcset="img/product-desktop-7.jpg 1x, img/product-desktop-7@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/product-tablet-7.jpg 1x, img/product-tablet-7@2x.jpg 2x">
-                  <img src="img/product-mobile-7.jpg" srcset="img/product-mobile-7@2x.jpg 2x" width="260" height="386"
-                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
-                </picture>
-              </a>
+            <li class="products__item" tabindex="0">
+              <div class="products__info">
+                <h4 class="products__info-title">Круиз "Леонор"</h4>
+                <dl class="products__info-list">
+                  <dt>Маршрут</dt>
+                  <dd>Чили - Южная Георгия - Антарктида - Аргентина</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Пунта-Аренас</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>17 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 12500 &#36;</dd>
+                </dl>
+                <a class="btn products__btn" href="#">Забронировать</a>
+              </div>
+              <h3 class="products__subtitle">Круиз "Леонор"</h3>
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="img/product-desktop-7.webp 1x, img/product-desktop-7@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/product-tablet-7.webp 1x, img/product-tablet-7@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-mobile-7.webp 1x, img/product-mobile-7@2x.webp 2x">
+                <source media="(min-width: 1024px)"
+                  srcset="img/product-desktop-7.jpg 1x, img/product-desktop-7@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product-tablet-7.jpg 1x, img/product-tablet-7@2x.jpg 2x">
+                <img src="img/product-mobile-7.jpg" srcset="img/product-mobile-7@2x.jpg 2x" width="260" height="386"
+                  loading="lazy" alt="Фоновое изображение Антарктики.">
+              </picture>
             </li>
-            <li class="products__item">
-              <a class="products__link" href="#">
-                <div class="products__info">
-                  <h4 class="products__info-title">Круиз "Минион - 1"</h4>
-                  <dl class="products__info-list">
-                    <dt>Маршрут</dt>
-                    <dd>Аргентина - Антарктида</dd>
-                    <dt>Порт отправления</dt>
-                    <dd>Ушуайя</dd>
-                    <dt>Продолжительность</dt>
-                    <dd>11 дней</dd>
-                    <dt>Цена</dt>
-                    <dd>от 12300 &#36;</dd>
-                  </dl>
-                  <div class="btn products__btn">Забронировать</div>
-                </div>
-                <h3 class="products__subtitle">Круиз "Минион - 1"</h3>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1024px)"
-                    srcset="img/product-desktop-8.webp 1x, img/product-desktop-8@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/product-tablet-8.webp 1x, img/product-tablet-8@2x.webp 2x">
-                  <source type="image/webp" srcset="img/product-mobile-8.webp 1x, img/product-mobile-8@2x.webp 2x">
-                  <source media="(min-width: 1024px)"
-                    srcset="img/product-desktop-8.jpg 1x, img/product-desktop-8@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/product-tablet-8.jpg 1x, img/product-tablet-8@2x.jpg 2x">
-                  <img src="img/product-mobile-8.jpg" srcset="img/product-mobile-8@2x.jpg 2x" width="260" height="386"
-                    loading="lazy" alt="Фоновое изображение Антарктики: море, снег, гора на заднем плане.">
-                </picture>
-              </a>
+            <li class="products__item" tabindex="0">
+              <div class="products__info">
+                <h4 class="products__info-title">Круиз "Минион - 1"</h4>
+                <dl class="products__info-list">
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Антарктида</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>11 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 12300 &#36;</dd>
+                </dl>
+                <a class="btn products__btn" href="#">Забронировать</a>
+              </div>
+              <h3 class="products__subtitle">Круиз "Минион - 1"</h3>
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="img/product-desktop-8.webp 1x, img/product-desktop-8@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/product-tablet-8.webp 1x, img/product-tablet-8@2x.webp 2x">
+                <source type="image/webp" srcset="img/product-mobile-8.webp 1x, img/product-mobile-8@2x.webp 2x">
+                <source media="(min-width: 1024px)"
+                  srcset="img/product-desktop-8.jpg 1x, img/product-desktop-8@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product-tablet-8.jpg 1x, img/product-tablet-8@2x.jpg 2x">
+                <img src="img/product-mobile-8.jpg" srcset="img/product-mobile-8@2x.jpg 2x" width="260" height="386"
+                  loading="lazy" alt="Фоновое изображение Антарктики.">
+              </picture>
             </li>
           </ul>
         </section>
