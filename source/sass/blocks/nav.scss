@@ -28,8 +28,8 @@
   }
 
   @include vp-767 {
-    margin-bottom: 28px;
-    padding-left: 0;
+    margin-bottom: 26px;
+    padding-left: 11px;
   }
 }
 
@@ -89,10 +89,10 @@
 .nav--opened .nav__toggle {
   position: absolute;
   top: 20px;
-  right: 15px;
+  right: 10px;
 
   background-image: url("../img/svg/menu-closed.svg");
-  background-size: 13px 13px;
+  background-size: 15px 15px;
 }
 
 .nav--nojs .nav__list {

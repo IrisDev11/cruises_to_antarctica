@@ -777,9 +777,9 @@ button,
 .nav--opened .nav__toggle {
   position: absolute;
   top: 20px;
-  right: 15px;
+  right: 10px;
   background-image: url("../img/svg/menu-closed.svg");
-  background-size: 13px 13px;
+  background-size: 15px 15px;
 }
 
 .nav--nojs .nav__list {
@@ -1373,6 +1373,9 @@ button,
 .footer__nav {
   -ms-flex-negative: 1;
   flex-shrink: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1727,12 +1730,6 @@ button,
     padding-top: 46px;
   }
 
-  .footer__nav {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
   .footer__nav-list {
     padding-bottom: 0;
     margin-bottom: 12px;
@@ -1826,7 +1823,7 @@ button,
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    width: 90%;
+    width: 89%;
     height: 100vh;
     padding: 20px 15px;
     background-color: #f9fbfd;
@@ -1834,7 +1831,7 @@ button,
 
   .header__logo {
     margin-top: 0;
-    margin-bottom: 33px;
+    margin-bottom: 36px;
   }
 
   .header__logo svg {
@@ -1863,8 +1860,8 @@ button,
   }
 
   .nav__item {
-    margin-bottom: 28px;
-    padding-left: 0;
+    margin-bottom: 26px;
+    padding-left: 11px;
   }
 
   .nav__link {
