@@ -1623,8 +1623,15 @@ button,
     line-height: 39px;
   }
 
+  .products__list {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
   .products__item {
     width: 309px;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .products__info {
