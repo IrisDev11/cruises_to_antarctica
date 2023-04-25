@@ -15,7 +15,7 @@
     width: 100%;
     height: 100%;
 
-    background-image: url("../img/bg-features-desktop.png");
+    background-image: url("../img/bg-features-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23,22 +23,22 @@
     opacity: 0.1;
 
     @include retina {
-      background-image: url("../img/bg-features-desktop@2x.png");
+      background-image: url("../img/bg-features-desktop@2x.jpg");
     }
 
     @include vp-1023 {
-      background-image: url("../img/bg-features-tablet.png");
+      background-image: url("../img/bg-features-tablet.jpg");
 
       @include retina {
-        background-image: url("../img/bg-features-tablet@2x.png");
+        background-image: url("../img/bg-features-tablet@2x.jpg");
       }
     }
 
     @include vp-767 {
-      background-image: url("../img/bg-features-mobile.png");
+      background-image: url("../img/bg-features-mobile.jpg");
 
       @include retina {
-        background-image: url("../img/bg-features-mobile@2x.png");
+        background-image: url("../img/bg-features-mobile@2x.jpg");
       }
     }
   }

@@ -82,6 +82,7 @@
     position: absolute;
     top: -3px;
     left: -23px;
+    display: block;
     width: 18px;
     height: 18px;
 
@@ -137,5 +138,5 @@
 
 .form__checkbox-approval input:focus ~ label {
   opacity: 0.6;
-  border-bottom: 1px solid $color-default-white;
+  text-decoration: underline;
 }
