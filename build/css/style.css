@@ -960,6 +960,7 @@ button,
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 30px;
+  background-color: #00346f;
   cursor: pointer;
 }
 
@@ -1811,6 +1812,22 @@ button,
     height: 100vh;
     padding: 20px 15px;
     background-color: #f9fbfd;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #f9fbfd #00346f;
+  }
+
+  .header__top-wrapper--menu-opened::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .header__top-wrapper--menu-opened::-webkit-scrollbar-track {
+    background: #f9fbfd;
+  }
+
+  .header__top-wrapper--menu-opened::-webkit-scrollbar-thumb {
+    background-color: #00346f;
+    border: 3px solid #00346f;
   }
 
   .header__logo {

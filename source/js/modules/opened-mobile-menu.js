@@ -41,8 +41,9 @@ const openedMobileMenu = () => {
 
   linkList.forEach((link) => {
     link.addEventListener('click', () => {
-      scrollLock.enableScrolling();
-      makesSmothScroll(link);
+      let activeLink = link;
+      closeMenu();
+      makesSmothScroll(activeLink);
     });
   });
 };
