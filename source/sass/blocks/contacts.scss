@@ -126,6 +126,10 @@
   font-size: 16px;
   line-height: 24px;
 
+  &--tel {
+    width: 168px;
+  }
+
   @include vp-1023 {
     align-items: flex-start;
     margin-bottom: 23px;

@@ -76,6 +76,8 @@
   line-height: 13px;
   color: $color-default-white;
 
+  cursor: pointer;
+
   &::before {
     content: "";
 

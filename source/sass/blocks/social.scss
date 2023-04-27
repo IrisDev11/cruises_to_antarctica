@@ -38,6 +38,7 @@
 
 .social__link {
   display: flex;
+  width: 100%;
 
   @include hover-focus {
     opacity: 0.6;

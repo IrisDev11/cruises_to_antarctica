@@ -4,7 +4,8 @@ import {makesSmothScroll} from './makes-smoth-scroll';
 
 const nav = document.querySelector('.nav');
 const navToggle = document.querySelector('.nav__toggle');
-const headerOverlay = document.querySelector('.header__overlay');
+const wrapper = document.querySelector('.header__wrapper');
+const overlay = document.querySelector('.header__overlay');
 const header = document.querySelector('.header__top-wrapper');
 const linkList = document.querySelectorAll('[data-mobile-scroll-link]');
 
@@ -17,8 +18,9 @@ const closeMenu = () => {
   focusLock.unlock('[data-header]');
   nav.classList.add('nav--closed');
   nav.classList.remove('nav--opened');
-  headerOverlay.classList.remove('header__overlay--menu-opened');
+  wrapper.classList.remove('header__wrapper--menu-opened');
   header.classList.remove('header__top-wrapper--menu-opened');
+  overlay.classList.remove('header__overlay--menu-opened');
 };
 
 const openMenu = () => {
@@ -26,8 +28,9 @@ const openMenu = () => {
   focusLock.lock('[data-header]');
   nav.classList.remove('nav--closed');
   nav.classList.add('nav--opened');
-  headerOverlay.classList.add('header__overlay--menu-opened');
+  wrapper.classList.add('header__wrapper--menu-opened');
   header.classList.add('header__top-wrapper--menu-opened');
+  overlay.classList.add('header__overlay--menu-opened');
 };
 
 const openedMobileMenu = () => {
@@ -46,6 +49,8 @@ const openedMobileMenu = () => {
       makesSmothScroll(activeLink);
     });
   });
+
+  overlay.addEventListener('click', () => closeMenu());
 };
 
 export {openedMobileMenu};
